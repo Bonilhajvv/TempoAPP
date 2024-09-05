@@ -1,6 +1,6 @@
 # appDeTempo
 # https://dasilvabonfim.github.io/appdetempo/
-![image](https://github.com/dasilvabonfim/appdetempo/assets/112987011/d078b0de-f8b0-4bdf-b082-73af3d257971)
+
 
 
 ## Sobre o Projeto
