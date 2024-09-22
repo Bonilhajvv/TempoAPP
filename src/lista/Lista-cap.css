@@ -1,0 +1,40 @@
+.capitals-weather {
+    padding: 20px;
+    background-image: linear-gradient(45deg , #2f4680, #500ae4);
+    border-radius: 10px;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.capitals-weather h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.capitals-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.capital-card {
+    background-color: #fff;
+    color: #333;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+}
+
+.capital-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.capital-card p {
+    margin: 5px 0;
+    font-size: 16px;
+}
