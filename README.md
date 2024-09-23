@@ -9,7 +9,13 @@ Além disso, o projeto conta com uma página que lista 10 capitais, exibindo sua
 
 
 ## Funcionalidades
-- **Previsão do Tempo em Tempo Real**: Acompanhe a temperatura atual, umidade e velocidade do vento diretamente para sua localização, com informações sempre atualizadas. Além disso, veja a previsão do tempo com as temperaturas máxima e mínima do dia, índice UV, precipitação e cobertura de nuvens. Também são exibidos os horários do nascer e pôr do sol.A aplicação fornece previsões meteorológicas para os próximos dias e um gráfico que mostra a variação da temperatura ao longo do dia. Os alertas sobre a intensidade dos ventos são baseados na escala BEAUFORT, indicando os efeitos do vento em terra. A cidade selecionada é exibida em um mapa para fácil visualização. Além dessas funcionalidades, há uma página dedicada para listar 10 capitais ao redor do mundo, mostrando suas temperaturas atuais e horários locais, proporcionando uma experiência completa e interativa para o usuário.
+- **Previsão do Tempo em Tempo Real**:Acompanhe a temperatura atual, umidade e velocidade do vento diretamente para sua localização, com informações sempre atualizadas. Além disso, veja a previsão do tempo com as temperaturas
+máxima e mínima do dia, índice UV, precipitação e cobertura de nuvens. Também são exibidos os horários do nascer e pôr do sol.
+
+A aplicação fornece previsões meteorológicas para os próximos dias e um gráfico que mostra a variação da temperatura ao longo do dia. Os alertas sobre a intensidade dos ventos são baseados na escala BEAUFORT, indicando os 
+efeitos do vento em terra. A cidade selecionada é exibida em um mapa para fácil visualização.
+
+Além dessas funcionalidades, há uma página dedicada para listar 10 capitais ao redor do mundo, mostrando suas temperaturas atuais e horários locais, proporcionando uma experiência completa e interativa para o usuário.
 - **Interface Moderna**: Uma interface de usuário limpa e atraente com ícones representativos para diferentes condições climáticas.
 - **Responsividade**: Acesse o aplicativo de qualquer dispositivo, seja desktop ou móvel.
 
