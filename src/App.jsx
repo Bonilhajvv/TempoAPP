@@ -1,12 +1,17 @@
-import React from 'react'
-import Weather from './components/Weather'
-
+import React from 'react';
+import Weather from './components/Weather';
+import CapitalsList from './lista/CapitalsList';
+import { Routes, RouterProvider, Route } from 'react-router-dom';
 const App = () => {
   return (
     <div className="App">
-      <Weather />
+      <Routes>
+            <Route path="/" element={<Weather />} />
+            <Route path="/lista/:nomeCapital" element={<CapitalsList/>} />
+          </Routes>
     </div>
-  )
+    
+  );
 }
 
-export default App
+export default App;

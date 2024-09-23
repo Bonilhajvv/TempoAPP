@@ -16,6 +16,7 @@ import rain from '../assets/rain.png';
 import snow from '../assets/snow.png';
 import windIcon from '../assets/wind.png';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { Link } from 'react-router-dom';
 
 function Weather() {
     const [states, setStates] = useState([]);
@@ -203,10 +204,14 @@ function Weather() {
                         alt="Ícone de busca"
                         onClick={search}
                     />
-                    <img
-                        src={lista}
-                        alt="Ícone de lista - link para nav"
-                    />
+                    <Link to="/lista/CapitalsList">
+                        <img
+                            href="/"
+                            src={lista}
+                            alt="Ícone de lista - link para navegação"
+                        />
+
+                    </Link>
                 </div>
                 {weatherData ? (
                     <>

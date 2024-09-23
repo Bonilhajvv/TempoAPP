@@ -20,8 +20,6 @@
     align-items: center;
     
 }
-
-
 .search-bar {
     display: flex;
     align-items: center;
@@ -50,6 +48,9 @@
     border-radius: 50%;
     background: #ebfffc;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .weather-icon {
