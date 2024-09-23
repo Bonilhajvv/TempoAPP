@@ -21,7 +21,8 @@ Para instalar e executar o projeto localmente, siga estes passos:
 3. Instale as dependências com `npm install @react-google-maps/api`.
 4. Instale as dependências com `npm install recharts`.
 5. Instale as dependências com `npm install react-router-dom`.
-6. Inicie o servidor de desenvolvimento com `npm run dev`.
+6. Instale as dependências com `npm install leaflet`.
+7. Inicie o servidor de desenvolvimento com `npm run dev`.
 
 ## Scripts
 - `dev`: Executa a aplicação em modo de desenvolvimento.
