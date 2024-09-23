@@ -18,7 +18,10 @@ máxima e mínima do dia, índice UV, precipitação e cobertura de nuvens. Tamb
 Para instalar e executar o projeto localmente, siga estes passos:
 1. Clone o repositório.
 2. Instale as dependências com `npm install`.
-3. Inicie o servidor de desenvolvimento com `npm run dev`.
+3. Instale as dependências com `npm install @react-google-maps/api`.
+4. Instale as dependências com `npm install recharts`.
+5. Instale as dependências com `npm install react-router-dom`.
+6. Inicie o servidor de desenvolvimento com `npm run dev`.
 
 ## Scripts
 - `dev`: Executa a aplicação em modo de desenvolvimento.
