@@ -1,7 +1,9 @@
 # appDeTempo
 
 ## Sobre o Projeto
-appDeTempo é uma aplicação web desenvolvida com React.js, Vite e JavaScript que oferece informações atualizadas sobre o tempo fornecidas pela API da openweathermap. A interface do usuário é limpa e moderna, exibindo informações como temperatura, umidade e velocidade do vento.
+appDeTempo é uma aplicação web desenvolvida com React.js, Vite e JavaScript, que fornece informações meteorológicas detalhadas em tempo real, usando dados da WeatherAPI. A interface é moderna e exibe a temperatura atual, bem como as temperaturas máxima e mínima do dia. Além disso, o app apresenta a umidade, precipitação, cobertura de nuvens e o índice UV. Para complementar, ele exibe o horário do nascer e do pôr do sol da cidade selecionada.
+A aplicação também inclui a previsão meteorológica dos próximos dias e apresenta um gráfico progressivo que mostra a variação da temperatura ao longo do dia. O usuário recebe alertas sobre a intensidade dos ventos, utilizando a escala BEAUFORT, que classifica a velocidade e o efeito do vento em terra, destacando os impactos de diferentes níveis de ventania. A cidade escolhida é mostrada em um mapa, utilizando a integração com o Google Maps.
+Além disso, o projeto conta com uma página que lista 10 capitais, exibindo suas respectivas temperaturas atuais e horários locais, fornecendo informações climáticas rápidas e precisas para os usuários.
 
 
 ## Funcionalidades
