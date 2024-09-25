@@ -2,7 +2,7 @@
 ![TempoAPP](https://github.com/user-attachments/assets/62d56f8c-2389-4fe7-a4eb-9ef2785a2598)
 
 ## Sobre o Projeto
-TempoAPP é uma aplicação web desenvolvida com React.js, Vite e JavaScript, que fornece informações meteorológicas detalhadas em tempo real, usando dados da WeatherAPI. A interface é moderna e exibe a temperatura atual, bem como as temperaturas máxima e mínima do dia. Além disso, o app apresenta a umidade, precipitação, cobertura de nuvens e o índice UV. Para complementar, ele exibe o horário do nascer e do pôr do sol da cidade selecionada.
+TempoAPP é uma aplicação web desenvolvida com React.js, Vite e JavaScript, que fornece informações meteorológicas detalhadas em tempo real, usando dados da WeatherAPI. A interface é moderna e exibe a temperatura atual, bem como as temperaturas máxima e mínima do dia. Além disso, o app apresenta a umidade, precipitação e o índice UV. Para complementar, ele exibe o horário do nascer e do pôr do sol da cidade selecionada.
 
 A aplicação também inclui a previsão meteorológica dos próximos dias e apresenta um gráfico progressivo que mostra a variação da temperatura ao longo do dia. O usuário recebe alertas sobre a intensidade dos ventos, utilizando a escala BEAUFORT, que classifica a velocidade e o efeito do vento em terra, destacando os impactos de diferentes níveis de ventania. A cidade escolhida é mostrada em um mapa, utilizando a integração com o Google Maps.
 
