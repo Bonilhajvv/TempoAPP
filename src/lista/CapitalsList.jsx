@@ -23,7 +23,7 @@ const CapitalsList = () => {
         const fetchWeatherData = async () => {
             const data = await Promise.all(
                 capitals.map(async (capital) => {
-                    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=3df87e2ebd594825b7a185537242009&q=${capital.name}&aqi=no`);
+                    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=815b2107e8374584b5b205259251902&q=${capital.name}&aqi=no`);
                     const weatherData = await response.json();
 
                     if (!response.ok) {
@@ -39,7 +39,7 @@ const CapitalsList = () => {
                     };
                 })
             );
-            setCapitalsData(data.filter(item => item)); // Remove itens nulos
+            setCapitalsData(data.filter(item => item));
         };
 
         fetchWeatherData();

@@ -21,8 +21,8 @@ import { Link } from 'react-router-dom';
 function Weather() {
     const [states, setStates] = useState([]);
     const [cities, setCities] = useState([]);
-    const [selectedState, setSelectedState] = useState('PR'); // Valor inicial para Paraná
-    const [selectedCity, setSelectedCity] = useState('Curitiba'); // Valor inicial para Curitiba
+    const [selectedState, setSelectedState] = useState('PR');
+    const [selectedCity, setSelectedCity] = useState('Curitiba');
     const [weatherData, setWeatherData] = useState(null);
     const [hourlyData, setHourlyData] = useState([]);
 
@@ -108,25 +108,18 @@ function Weather() {
             return;
         }
         try {
-            const url = `http://api.weatherapi.com/v1/current.json?key=3df87e2ebd594825b7a185537242009&q=${selectedCity}&aqi=no`;
-            const url2 = `http://api.weatherapi.com/v1/forecast.json?key=3df87e2ebd594825b7a185537242009&q=${selectedCity}&days=7&aqi=no&alerts=no`;  // Alterado para 7 dias
-            const url3 = `http://api.weatherapi.com/v1/astronomy.json?key=3df87e2ebd594825b7a185537242009&q=${selectedCity}&dt=2024-09-20`;
-            // const url4 = ``;
+            const url = `http://api.weatherapi.com/v1/current.json?key=815b2107e8374584b5b205259251902&q=${selectedCity}&aqi=no`;
+            const url2 = `http://api.weatherapi.com/v1/forecast.json?key=815b2107e8374584b5b205259251902&q=${selectedCity}&days=7&aqi=no&alerts=no`;
+            const url3 = `http://api.weatherapi.com/v1/astronomy.json?key=815b2107e8374584b5b205259251902&q=${selectedCity}&dt=2024-09-20`;
+
 
             const response = await fetch(url);
             const response2 = await fetch(url2);
             const response3 = await fetch(url3);
-            // const response4 = await fetch(url4);
 
             const data = await response.json();
             const data2 = await response2.json();
             const data3 = await response3.json();
-            // const data4 = await response4.json();
-
-            console.log(data);
-            console.log(data2);
-            console.log(data3);
-            // console.log(data4);
 
             if (!response.ok) {
                 alert("Cidade não encontrada");
