@@ -108,9 +108,9 @@ function Weather() {
             return;
         }
         try {
-            const url = `http://api.weatherapi.com/v1/current.json?key=815b2107e8374584b5b205259251902&q=${selectedCity}&aqi=no`;
-            const url2 = `http://api.weatherapi.com/v1/forecast.json?key=815b2107e8374584b5b205259251902&q=${selectedCity}&days=7&aqi=no&alerts=no`;
-            const url3 = `http://api.weatherapi.com/v1/astronomy.json?key=815b2107e8374584b5b205259251902&q=${selectedCity}&dt=2024-09-20`;
+            const url = `https://api.weatherapi.com/v1/current.json?key=815b2107e8374584b5b205259251902&q=${selectedCity}&aqi=no`;
+            const url2 = `https://api.weatherapi.com/v1/forecast.json?key=815b2107e8374584b5b205259251902&q=${selectedCity}&days=7&aqi=no&alerts=no`;
+            const url3 = `https://api.weatherapi.com/v1/astronomy.json?key=815b2107e8374584b5b205259251902&q=${selectedCity}&dt=2024-09-20`;
 
             const response = await fetch(url);
             const response2 = await fetch(url2);
