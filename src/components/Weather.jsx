@@ -112,7 +112,6 @@ function Weather() {
             const url2 = `http://api.weatherapi.com/v1/forecast.json?key=815b2107e8374584b5b205259251902&q=${selectedCity}&days=7&aqi=no&alerts=no`;
             const url3 = `http://api.weatherapi.com/v1/astronomy.json?key=815b2107e8374584b5b205259251902&q=${selectedCity}&dt=2024-09-20`;
 
-
             const response = await fetch(url);
             const response2 = await fetch(url2);
             const response3 = await fetch(url3);
