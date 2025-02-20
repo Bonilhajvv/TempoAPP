@@ -29,7 +29,6 @@
     align-items: center;
     gap: 12px;
     flex-wrap: wrap;
-    /* Permite quebrar em linhas se necessário */
     justify-content: center;
     width: 100%;
     margin-bottom: 20px;
@@ -39,9 +38,7 @@
 .search-bar select {
     height: 60px;
     width: 100%;
-    /* Ocupa 100% do container */
     max-width: 640px;
-    /* Opcional: limita em telas maiores */
     border: none;
     outline: none;
     border-radius: 40px;
@@ -335,7 +332,7 @@
 
     .forecast-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         gap: 20px;
     }
 
