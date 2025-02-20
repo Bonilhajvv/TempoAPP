@@ -131,33 +131,3 @@ h1 {
         /* Tamanho do título em telas menores */
     }
 }
-
-@media (max-width: 768px) {
-    .cards-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-
-    .capital-card {
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
-}
-
-@media (max-width: 480px) {
-    .cards-container {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    .capital-card {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-}
