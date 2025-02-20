@@ -13,7 +13,9 @@ const capitals = [
     { name: 'Berlim', country: 'Alemanha' },
     { name: 'Paris', country: 'França' },
     { name: 'Madri', country: 'Espanha' },
-    { name: 'Roma', country: 'Itália' }
+    { name: 'Roma', country: 'Itália' },
+    { name: 'Buenos Aires', country: 'Argentina' },
+    { name: 'Londres', country: 'Reino Unido' },
 ];
 
 const CapitalsList = () => {
@@ -46,8 +48,8 @@ const CapitalsList = () => {
     }, []);
 
     return (
-        <div className="teste">
-            <div className="weather">
+        <div className="teste1">
+            <div className="weather1">
                 <div className="capitals-list">
                     <div className="container">
                         <h1>Capitais</h1>
@@ -62,7 +64,9 @@ const CapitalsList = () => {
                             <div key={index} className="capital-card">
                                 <h2>{capital.name}</h2>
                                 <p>País: {capital.country}</p>
-                                <p>Temperatura: {capital.temperature}°C</p>
+                                <p style={{
+                                    color: capital.temperature < 12 ? 'blue' : 'red'
+                                }}>Temperatura: {capital.temperature}°C</p>
                                 <p>Horário: {new Date(capital.time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>
                             </div>
                         ))}

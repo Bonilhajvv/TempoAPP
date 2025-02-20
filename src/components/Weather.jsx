@@ -211,104 +211,105 @@ function Weather() {
                         <p className="temperature">{weatherData.temperature}°C</p>
                         <p className="location">{weatherData.location.name}</p>
 
-                        <div className="weather-data">
-                            <div className="col">
+                        <div className="grid-container">
+                            <div className="weather-item">
                                 <img src={maxIcon} alt="Ícone de máxima" width={60} height={60} />
                                 <div>
                                     <p>{weatherData.maxtemp_c}°C</p>
                                     <span>Máxima</span>
                                 </div>
                             </div>
-                            <div className="col">
+
+                            <div className="weather-item">
                                 <img src={minIcon} alt="Ícone de mínima" width={60} height={60} />
                                 <div>
                                     <p>{weatherData.mintemp_c}°C</p>
                                     <span>Mínima</span>
                                 </div>
                             </div>
-                        </div>
 
-                        <div className="weather-data">
-                            <div className="col">
+                            <div className="weather-item">
                                 <img src={humidityIcon} alt="Ícone de umidade" />
                                 <div>
-                                    <p>{weatherData.humidity} %</p>
+                                    <p>{weatherData.humidity}%</p>
                                     <span>Umidade</span>
                                 </div>
                             </div>
-                            <div className="col">
+
+                            {/* 4) Velocidade */}
+                            <div className="weather-item">
                                 <img src={windIcon} alt="Ícone de vento" />
                                 <div>
                                     <p>{weatherData.wind} Km/H</p>
                                     <span>Velocidade</span>
                                 </div>
                             </div>
-                        </div>
 
-                        <div className="weather-data">
-                            <div className="col">
-                                <img src={precipitacao} width={60} height={60} />
+                            {/* 5) Precipitação */}
+                            <div className="weather-item">
+                                <img src={precipitacao} alt="Ícone de precipitação" width={60} height={60} />
                                 <div>
                                     <p>{weatherData.totalprecip_mm} mm</p>
                                     <span>Precipitação</span>
                                 </div>
                             </div>
-                            <div className="col">
-                                <img src={uv} width={60} height={60} />
+
+                            {/* 6) Índice UV */}
+                            <div className="weather-item">
+                                <img src={uv} alt="Ícone de Índice UV" width={60} height={60} />
                                 <div>
                                     <p>{weatherData.uv}</p>
                                     <span>Índice UV</span>
                                 </div>
                             </div>
-                        </div>
 
-                        <div className="weather-data">
-                            <div className="col">
-                                <img src={sunrise} width={60} height={60} />
+                            {/* 7) Nascer do sol */}
+                            <div className="weather-item">
+                                <img src={sunrise} alt="Ícone de nascer do sol" width={60} height={60} />
                                 <div>
                                     <p>{weatherData.sunrise}</p>
                                     <span>Nascer do sol</span>
                                 </div>
                             </div>
-                            <div className="col">
-                                <img src={sunset} width={60} height={60} />
+
+                            {/* 8) Pôr do sol */}
+                            <div className="weather-item">
+                                <img src={sunset} alt="Ícone de pôr do sol" width={60} height={60} />
                                 <div>
                                     <p>{weatherData.sunset}</p>
-                                    <span>Por do sol</span>
+                                    <span>Pôr do sol</span>
                                 </div>
                             </div>
                         </div>
 
 
+                        <div className="map-chart-grid">
+                            <div className="container-mapa">
+                                <iframe
+                                    title="Map"
+                                    width="100%"
+                                    height="100%"
+                                    src={`https://www.google.com/maps/embed/v1/view?key=AIzaSyB_Y2QDEcZEF7gYS8xLPYN_6DI9znIe_i0&center=${weatherData.location.lat},${weatherData.location.lon}&zoom=10`}
+                                    allowFullScreen
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                />
+                            </div>
 
-                        <div className="container-mapa">
-                            <iframe
-                                title="Map"
-                                width="100%"
-                                height="100%"
-                                src={`https://www.google.com/maps/embed/v1/view?key=AIzaSyB_Y2QDEcZEF7gYS8xLPYN_6DI9znIe_i0&center=${weatherData.location.lat},${weatherData.location.lon}&zoom=10`}
-                                allowFullScreen
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"
-                            />
+                            <div className="temperature-chart">
+                                <h2>Temperatura durante o dia</h2>
+                                <ResponsiveContainer width="100%" height={400}>
+                                    <LineChart data={hourlyData}>
+                                        <CartesianGrid strokeDasharray="3 3" />
+                                        <XAxis dataKey="time" stroke="#ffffff" />
+                                        <YAxis stroke="#ffffff" />
+                                        <Tooltip contentStyle={{ backgroundColor: '#333', borderColor: '#666' }} itemStyle={{ color: '#ffffff' }} />
+                                        <Legend wrapperStyle={{ color: '#ffffff' }} />
+                                        <Line type="monotone" dataKey="temperature" stroke="#8884d8" activeDot={{ r: 8 }} />
+                                    </LineChart>
+                                </ResponsiveContainer>
+                            </div>
                         </div>
-
-
-
-                        <div className="temperature-chart">
-                            <h2>Temperatura durante o dia</h2>
-                            <ResponsiveContainer width="100%" height={400}>
-                                <LineChart data={hourlyData}>
-                                    <CartesianGrid strokeDasharray="3 3" />
-                                    <XAxis dataKey="time" stroke="#ffffff" />
-                                    <YAxis stroke="#ffffff" />
-                                    <Tooltip contentStyle={{ backgroundColor: '#333', borderColor: '#666' }} itemStyle={{ color: '#ffffff' }} />
-                                    <Legend wrapperStyle={{ color: '#ffffff' }} />
-                                    <Line type="monotone" dataKey="temperature" stroke="#8884d8" activeDot={{ r: 8 }} />
-                                </LineChart>
-                            </ResponsiveContainer>
-                        </div>
-
 
 
                         <div className="forecast">
@@ -328,9 +329,9 @@ function Weather() {
                                     return (
                                         <div key={index} className="forecast-day">
                                             <p>{new Date(day.date).toLocaleDateString()}</p>
-                                            <img src={icon} alt={day.day.condition.text} width={50} height={50} />
-                                            <p><strong>Máx:</strong> {Math.floor(day.day.maxtemp_c)}°C</p>
-                                            <p><strong>Mín:</strong> {Math.floor(day.day.mintemp_c)}°C</p>
+                                            <img src={icon} alt={day.day.condition.text} width={100} height={100} />
+                                            <p className='forecast-max'><strong>Máx:</strong> {Math.floor(day.day.maxtemp_c)}°C</p>
+                                            <p className='forecast-min'><strong>Mín:</strong> {Math.floor(day.day.mintemp_c)}°C</p>
                                         </div>
                                     );
                                 })}
