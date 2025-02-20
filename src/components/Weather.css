@@ -222,7 +222,7 @@
     .search-bar select {
         font-size: 18px;
         padding-right: 20px;
-        /* Ajuste o padding se necessário */
+        justify-content: center;
     }
 
 
