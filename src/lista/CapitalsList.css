@@ -79,8 +79,8 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
     width: 100%;
+    height: 56%;
     padding: 0 10px;
-    /* REMOVA overflow-y: scroll; */
 }
 
 .capital-card {
