@@ -10,7 +10,7 @@
 }
 
 .weather1 {
-    width: 80%;
+    width: 96%;
     height: 90vh;
     margin: 0 auto;
     padding: 30px;
@@ -123,12 +123,10 @@ h1 {
 
     .cards-container {
         grid-template-columns: 1fr;
-        /* Um card por linha em telas pequenas */
     }
 
     h1 {
         font-size: 1.5em;
-        /* Tamanho do título em telas menores */
     }
 }
 
