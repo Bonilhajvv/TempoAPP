@@ -4,15 +4,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* sem max-height ou overflow aqui se .weather1 for o container rolável */
     scrollbar-width: thin;
     scrollbar-color: #888 transparent;
+    overflow: hidden;
 }
 
 .weather1 {
-    /* Remova width: 168vh; e min-height: 100vh; */
     width: 100%;
-    height: 90vh;              /* Uma altura fixa de 90% da tela */
+    height: 90vh;
     margin: 0 auto;
     padding: 30px;
     border-radius: 10px;
@@ -20,7 +19,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: auto;          /* Só aqui tem scroll */
+    overflow-y: hidden;
 }
 
 
@@ -81,6 +80,8 @@ h1 {
     width: 100%;
     height: 56%;
     padding: 0 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .capital-card {
