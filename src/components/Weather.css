@@ -356,6 +356,10 @@
         align-self: center;
     }
 
+    .containerPrevisao{
+        justify-items: center;
+    }
+    
     .temperature {
         font-size: 50px;
     }
