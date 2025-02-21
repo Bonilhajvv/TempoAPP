@@ -189,12 +189,9 @@
 
 @media (max-width: 900px) {
     .teste {
-        place-self: center;
         border-radius: 10px;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        max-height: auto;
         overflow-y: auto;
         scrollbar-width: thin;
         scrollbar-color: #888 transparent;
@@ -207,7 +204,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 90%;
         max-width: 600px;
         margin: 0 auto;
     }
@@ -216,7 +213,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
-        width: auto;
+        width: 100%;
         margin-bottom: 20px;
     }
 
@@ -247,27 +244,28 @@
 
     .temperature {
         color: #fff;
-        font-size: 80px;
+        font-size: 60px;
         line-height: 1;
     }
 
     .location {
         color: #fff;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(2, 6fr);
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
         gap: 20px;
+        padding: 0px 100px;
         width: 100%;
         margin-top: 40px;
         color: #fff;
     }
 
     .weather-item {
-        font-size: 20px;
+        font-size: 18px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -289,7 +287,7 @@
         border-radius: 15px;
         overflow: hidden;
         margin-top: 40px;
-        display: block;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
@@ -343,5 +341,41 @@
         padding: 20px;
         border-radius: 10px;
         text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .search-bar input,
+    .search-bar select {
+        max-width: 142px;
+        font-size: 14px;
+        padding-right: 8px;
+        flex: 1 1 100%;
+    }
+
+    .temperature {
+        font-size: 50px;
+    }
+
+    .location {
+        font-size: 25px;
+    }
+
+    .weather-icon {
+        width: 120px;
+    }
+
+    .forecast h2 {
+        font-size: 24px;
+    }
+
+    .forecast-container {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .forecast-day {
+        padding: 15px;
     }
 }

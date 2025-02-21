@@ -9,7 +9,8 @@
 
 .App{
   min-height: 100vh;
-  display: grid;
+  display: flex;
+  align-content: center;
+  justify-content: center;
   background: #e2d4ff;
-  overflow-y: hidden;
 }
