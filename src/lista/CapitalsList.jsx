@@ -48,8 +48,8 @@ const CapitalsList = () => {
     }, []);
 
     return (
-        <div className="teste1">
-            <div className="weather1">
+        <div>
+            <div className="containerCapitalsList">
                 <div className="capitals-list">
                     <div className="container">
                         <h1>Capitais</h1>
