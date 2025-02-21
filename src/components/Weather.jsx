@@ -166,9 +166,11 @@ function Weather() {
         }
     };
 
+    const weatherClass = weatherData && weatherData.temperature < 15 ? 'cold' : 'hot';
+
     return (
         <div className="teste">
-            <div className="weather">
+            <div className={`weather ${weatherClass}`}>
                 <div className="search-bar">
                     <select
                         value={selectedState}

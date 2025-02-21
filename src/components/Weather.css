@@ -17,12 +17,18 @@
     place-self: center;
     padding: 35px;
     border-radius: 10px;
-    background-image: linear-gradient(45deg, #2f4680, #500ae4);
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
+.weather.hot {
+    background-image: linear-gradient(45deg, #e46b6b, #ab1d1d); /* Tom de vermelho para temperaturas quentes */
 }
 
+.weather.cold {
+    background-image: linear-gradient(45deg, #2f4680, #500ae4); /* Cor original para temperaturas frias */
+}
 
 .search-bar {
     display: flex;
