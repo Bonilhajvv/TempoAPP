@@ -209,9 +209,11 @@ function Weather() {
                 </div>
                 {weatherData ? (
                     <>
-                        <img src={weatherData.icon} alt="Clima" className="weather-icon" />
-                        <p className="temperature">{weatherData.temperature}°C</p>
-                        <p className="location">{weatherData.location.name}</p>
+                        <div className="containerTeste">
+                            <img src={weatherData.icon} alt="Clima" className="weather-icon" />
+                            <p className="temperature">{weatherData.temperature}°C</p>
+                            <p className="location">{weatherData.location.name}</p>
+                        </div>
 
                         <div className="grid-container">
                             <div className="weather-item">
