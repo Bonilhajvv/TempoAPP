@@ -216,14 +216,14 @@
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
-        width: 100%;
+        width: auto;
         margin-bottom: 20px;
     }
 
     .search-bar input,
     .search-bar select {
         min-width: auto;
-        width: 100%;
+        width: auto;
         font-size: 18px;
         padding-right: 20px;
         justify-content: center;
