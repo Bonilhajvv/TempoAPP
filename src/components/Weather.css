@@ -23,11 +23,11 @@
 
 }
 .weather.hot {
-    background-image: linear-gradient(45deg, #e46b6b, #ab1d1d); /* Tom de vermelho para temperaturas quentes */
+    background-image: linear-gradient(45deg, #e46b6b, #ab1d1d);
 }
 
 .weather.cold {
-    background-image: linear-gradient(45deg, #2f4680, #500ae4); /* Cor original para temperaturas frias */
+    background-image: linear-gradient(45deg, #2f4680, #500ae4);
 }
 
 .search-bar {
