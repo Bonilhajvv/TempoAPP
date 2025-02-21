@@ -92,11 +92,11 @@ h1 {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.capital-card h2{
+.capital-card h2 {
     font-size: 36px;
 }
 
-.capital-card p{
+.capital-card p {
     font-size: 24px;
 }
 
@@ -138,6 +138,12 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    .icon-circle {
+        width: 40px;
+        height: 40px;
+        margin-left: auto;
+    }
+
     .cards-container {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
@@ -147,12 +153,26 @@ h1 {
         padding: 20px;
     }
 
+    .capital-card h2 {
+        font-size: 24px;
+    }
+
+    .capital-card p {
+        font-size: 16px;
+    }
+
     h1 {
         font-size: 32px;
     }
 }
 
 @media (max-width: 480px) {
+    .icon-circle {
+        width: 40px;
+        height: 40px;
+        margin-left: auto;
+    }
+
     .cards-container {
         grid-template-columns: 1fr;
         gap: 10px;
@@ -163,6 +183,14 @@ h1 {
     }
 
     h1 {
+        font-size: 28px;
+    }
+
+    .capital-card h2 {
         font-size: 24px;
+    }
+
+    .capital-card p {
+        font-size: 16px;
     }
 }
