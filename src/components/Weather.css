@@ -359,17 +359,20 @@
     .containerPrevisao{
         justify-items: center;
     }
-    
+
     .temperature {
         font-size: 50px;
+        justify-content: center;
     }
 
     .location {
         font-size: 25px;
+        justify-content: center;
     }
 
     .weather-icon {
         width: 120px;
+        justify-content: center;
     }
 
     .forecast h2 {
