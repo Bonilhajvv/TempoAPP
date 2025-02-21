@@ -65,7 +65,7 @@ const CapitalsList = () => {
                                 <h2>{capital.name}</h2>
                                 <p>País: {capital.country}</p>
                                 <p style={{
-                                    color: capital.temperature < 12 ? 'blue' : 'red'
+                                    color: capital.temperature <= 15 ? 'blue' : 'red'
                                 }}>Temperatura: {capital.temperature}°C</p>
                                 <p>Horário: {new Date(capital.time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>
                             </div>
