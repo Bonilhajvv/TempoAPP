@@ -55,6 +55,11 @@
     justify-content: center;
 }
 
+.containerPrevisao{
+    display: inline;
+    justify-items: center;
+}
+
 .weather-icon {
     width: 160px;
     margin: 30px 0;
